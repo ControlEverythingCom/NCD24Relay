@@ -1,0 +1,7 @@
+{
+    "name": "NCD24Relay",
+    "version": "0.0.1",
+    "author": "Travis Elliott <travis@controlanything.com>",
+    "license": "GNU",
+    "description": "Library intended for the operation of NCD 24 channel Particle compatible Relay Controller with 8 inputs"
+}
