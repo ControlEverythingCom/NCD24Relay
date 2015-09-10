@@ -25,7 +25,7 @@ public:
     //Set status of all relays in bank
     void setBankStatus(int status, int bank);
     //Set status of all relays on board
-    void setAllRelayStatus(int bank1, int bank2, int bank3, int bank4);
+    void setAllRelayStatus(int bank1, int bank2, int bank3);
     //Read status of relay. Valid return 0 for off 1 for on.  256 returned if there is an error
     int readRelayStatus(int relay);
     //Read status of all relays in bank.  0-255 valid.  256 returned on error

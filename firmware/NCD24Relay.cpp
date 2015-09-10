@@ -16,12 +16,12 @@ NCD24Relay::NCD24Relay(){
 void NCD24Relay::setAddress(int a0, int a1){
     address = 0x20;
     if(a0 == 1){
-        address = address | 1;
-        address2 = address2 | 1;
-    }
-    if(a1 == 1){
         address = address | 2;
         address2 = address2 | 2;
+    }
+    if(a1 == 1){
+        address = address | 4;
+        address2 = address2 | 4;
     }
     //Start I2C port
     Wire.begin();
