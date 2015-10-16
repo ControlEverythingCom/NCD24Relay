@@ -1,5 +1,5 @@
 /* Includes ------------------------------------------------------------------*/
-#include "application.h"
+#include "NCD24Relay/NCD24Relay.h"
 
 NCD24Relay relayController;
 
@@ -9,7 +9,7 @@ SYSTEM_MODE(MANUAL);
 void setup()
 {
 	Serial.begin(115200);
-	relayController.setAddress(0,0);
+	relayController.setAddress(1,1);
 }
 
 /* This function loops forever --------------------------------------------*/
