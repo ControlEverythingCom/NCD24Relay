@@ -86,7 +86,8 @@ retryAddress2:
 
         retrySetInputPullUps:
         Wire.beginTransmission(address2);
-        Wire.write(16);
+        Wire.write(0x0C);
+	Wire.write(0);
         Wire.write(255);
         status = Wire.endTransmission();
         if(status != 0){
